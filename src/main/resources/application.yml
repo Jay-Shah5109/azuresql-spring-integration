@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azure-test-sql-db-server.database.windows.net:1433;;database=azure-sql-db-jaytest;user=admin-jay@azure-test-sql-db-server;password=Password123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
